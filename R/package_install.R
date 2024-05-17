@@ -1,6 +1,7 @@
 #' Package installation message
 #'
 #' To protect patient data, internet access is disabled in your Arcus Lab while your data is mounted.
+#' @export
 install.packages <- function(...) {
   message("You can't install packages with install.packages() from within an Arcus Lab.\nInstead, use the form.")
 }
@@ -8,6 +9,7 @@ install.packages <- function(...) {
 #' Package library message
 #'
 #' To protect patient data, internet access is disabled in your Arcus Lab while your data is mounted.
+#' @export
 library <- function(...) {
 
   check <- try(base::require(...))
@@ -21,6 +23,7 @@ library <- function(...) {
 #' Package require message
 #'
 #' To protect patient data, internet access is disabled in your Arcus Lab while your data is mounted.
+#' @export
 require <- function(...) {
 
   check <- try(base::require(...))
