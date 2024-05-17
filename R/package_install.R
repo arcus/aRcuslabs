@@ -33,3 +33,11 @@ require <- function(...) {
     base::require(...)
   }
 }
+
+#' Test function
+#'
+#' To protect patient data, internet access is disabled in your Arcus Lab while your data is mounted.
+#' @export
+test_function <- function(...) {
+  message("\nTest\n")
+}
